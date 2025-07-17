@@ -110,22 +110,6 @@ font-weight: 700;
 font-size: 1rem;
 font-weight: 400;
 }
-
-/* responsive media query */
-@media screen and (max-width: 576px) {
-    .navbar, 
-    .nav-links, 
-    .teams{
-        flex-direction: column;
-    }
-    .team-image-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .team-feature{
-        margin:20px;
-    }
-}
-
 /* love and enjoy */
 .love-enjoy{
     gap: 146px;
@@ -133,10 +117,34 @@ font-weight: 400;
 .love-enjoy-1{
     max-width: 586px;
 }
-.love-enjoy-img{
+.love-enjoy-2 img{
+    width: 100%;
+}
+#border{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.jumbu-id{
+    padding: 45px 42px;
+    border-radius: 8px;
+    border: none;
+background: rgb(255, 144, 14);
+color: white;
+margin-top: -100px;
+margin-left: -100px
+}
+.jumbu{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.jumbu-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/* .love-enjoy-img{
     max-width: 708px;
     
-}
+} */
 .card{
     padding: 30px 42px 30px 30px;
     margin-bottom: 20px;
@@ -152,6 +160,7 @@ background: rgb(255, 255, 255);
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 24px;
 }
 .fact{
     height: 240px;
@@ -165,10 +174,12 @@ border-radius: 8px;
 
 }
 .fact-h3{
-
+ font-size: 1.81rem;
+ font-weight: bold;
 }
 .fact-p{
     max-width: 542px;
+    font-size: 1rem;
 }
 .fact-title{
     font-size: 2.81rem;
@@ -181,12 +192,85 @@ margin-bottom: 10px;
 font-weight: 600;
 margin-top: 10px;
 }
-/* medium size device */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+
+/* sponsor related styles */
+.our-sponsor{
+    margin-bottom: 120px;
+}
+.sponsor-info{
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+footer{
+    margin: 0 auto;
+    max-width: 1440px;
+    
+    
+}
+.footer-description{
+    text-align: center;
+    padding: 39px 410px;
+}
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-links, 
+    .teams,
+    .love-enjoy
+    {
         flex-direction: column;
     }
+    .team-image-container,
+    .facts-container,
+    .sponsor-companies
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .facts-container{
+        justify-items: center;
+    }
+    .sponsor-companies{
+        justify-items: center;
+        gap: 50px;
+    }
     .team-feature{
+        margin:20px;
+    }
+    section{
+        margin: 0 auto;
+    }
+    .jumbu-id{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams, .love-enjoy{
+        flex-direction: column;
+    }
+    .jumbu-id{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .team-feature{
+        margin: 0 auto;
+    }
+    .sponsor-companies, .facts-container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+    }
+    section{
         margin: 0 auto;
     }
 }
