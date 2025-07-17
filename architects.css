@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+/* primary bg */
+.bg-light{
+    background-color:rgba(255, 144, 14, 0.1);
+}
+.gray{
+    color: rgb(66, 66, 66);
+}
+.light-gray{
+    color: rgb(19, 19, 19);
+}
+
+.btn-primary{
+    border: none;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* header styles */
+
+/* navbar related styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.nav-item{
+list-style: none;
+margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+font-weight: 500;
+text-align: center;
+
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/* banner styles */
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 4rem;
+font-weight: 700;
+}
+.banner-description{
+    font-size: 1.25rem;
+font-weight: 400;
+}
+.banner-img{
+    width: 100%;
+}
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+}
